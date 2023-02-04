@@ -5,7 +5,7 @@ const express = require("express");
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT ?? 3000;
+const port = process.env.PORT;
 const webhookClient = new Discord.WebhookClient({ 
     url: process.env.WEBHOOK,
 });
